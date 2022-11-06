@@ -26,6 +26,9 @@
     max-height: 150px;
     margin: 1em 2em;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .inicio_opciones{
     padding: .5em 0em;
@@ -127,8 +130,8 @@
     }
     .inicio_opciones{
         padding: .5em 0em;
-        max-width: 100px;
-        max-height: 100px;
+        min-width: 100px;
+        min-height: 100px;
         margin: .5em 1em;
         font-size: 16px;
     }
