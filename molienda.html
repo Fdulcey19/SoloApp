@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./iconos/bodega.png" type="image/x-icon">
-    <title>Inventario</title>
+    <link rel="shortcut icon" href="./iconos/moledora.png" type="image/x-icon">
+    <title>Molienda</title>
 </head>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -64,49 +64,51 @@
             <div class="modal-dialog ">
                 <div class="modal-content bg-light text-dark">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center w-100" id="form_tostado_Label">Nuevo Lote Post-Tostión</h5>
+                        <h5 class="modal-title text-center w-100" id="form_tostado_Label">Nuevo Lote Molienda</h5>
                         <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"
                             style="width:50px ;"></button>
                     </div>
                     <div class="modal-body py-0">
-                        <figure class="text-center m-0 mt-2">
-                            <img class="img-fluid pt-1" style="width:60px; height:60px;" src="./iconos/bolsa_cafe_molido.png"
+                        <figure class="text-center m-0">
+                            <img class="img-fluid pt-1 my-2" style="width:80px; height:80px;" src="./iconos/maquina_M.png"
                                 alt="">
                         </figure>
                         <!-- Formulario INPUTS -->
                         <form>
-                            <select class="form-select form-select-sm my-3" aria-label="Ejemplo de .form-select-sm">
-                                <option selected disabled>LOTE</option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="3">C</option>
-                            </select>
-                            <select class="form-select form-select-sm my-3" aria-label="Ejemplo de .form-select-sm">
-                                <option selected disabled>LOTE POST-TOSTION</option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="3">C</option>
-                            </select>
-                            <select class="form-select form-select-sm my-3" aria-label="Ejemplo de .form-select-sm">
-                                <option selected disabled>Presentación</option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="3">C</option>
-                            </select>
-                            <div class="mb-3">
-                                <input type="number" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Peso Por Unidad">
+                            <div>
+                                <label for="fechaSiembra" class="form-label">Lote</label>
+                                <select class="form-select form-select-sm mb-2" aria-label="Ejemplo de .form-select-sm">
+                                    <option selected disabled>Lote</option>
+                                    <option value="1">A</option>
+                                    <option value="2">B</option>
+                                    <option value="3">C</option>
+                                </select>
                             </div>
-                            <div class="mb-3">
-                                <input type="number" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Peso Total">
+                            <div>
+                                <label for="fechaSiembra" class="form-label">Lote Post-Tostion</label>
+                                <select class="form-select form-select-sm mb-2" aria-label="Ejemplo de .form-select-sm">
+                                    <option selected disabled>Lote Post-Tostion</option>
+                                    <option value="1">A</option>
+                                    <option value="2">B</option>
+                                    <option value="3">C</option>
+                                </select>
                             </div>
-                            <div class="mb-3">
-                                <label for="fechaSiembra" class="form-label">Operario</label>
-                                <input type="text" class="form-control" id="fechaSiembra" placeholder="Fecha de siembra">
-                            </div>
-                        
                             
+                            <div class="mb-1">
+                                <label for="fechaSiembra" class="form-label">Peso Inicical</label>
+                                <input type="number" class="form-control" id="fechaSiembra" placeholder="Peso en Kg">
+                            </div>
+                            <p  class="fs-4 mt-3">Granulometria</p>
+                            <div class="mb-2">
+                                <label for="fechaSiembra" class="form-label fs-5">Tipo de Malla</label>
+                                <input type="text" class="form-control" id="fechaSiembra"
+                                    placeholder="Nro° de Malla">
+                            </div>
+                            <div class="mb-2">
+                                <label for="fechaSiembra" class="form-label">Peso Final</label>
+                                <input type="text" class="form-control" id="fechaSiembra"
+                                    placeholder="Peso en Kg">
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
@@ -120,6 +122,3 @@
     </div>
     <!-- Bootstrap JS -->
     <Script src="./js/bootstrap.min.js"></Script>
-</body>
-
-</html>
