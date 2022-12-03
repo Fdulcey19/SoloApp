@@ -34,9 +34,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contactos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./inicio.html">Login</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -56,11 +53,11 @@
         <div class="row contenedor_historial">
         </div>
         <div class="row">
-
+            
         </div>
         <!-- Modal Formulario Tostadora-->
         <div class="modal fade " id="form_lote_Modal" tabindex="-1" aria-labelledby="form_tostado_Label"
-            aria-hidden="true">
+        aria-hidden="true">
             <div class="modal-dialog ">
                 <div class="modal-content bg-light text-dark">
                     <div class="modal-header">
@@ -74,48 +71,50 @@
                                 alt="">
                         </figure>
                         <!-- Formulario INPUTS -->
-                        <form>
+                        <form class="needs-validation" novalidate>
                             <div class="mb-1">
-                                <label for="fechaSiembra" class="form-label">Fecha de Compra</label>
-                                <input type="date" class="form-control" id="fechaSiembra" placeholder="Fecha de siembra"
-                                    min="2000-01-01" max="2030-01-01">
+                                <label for="dateFechaBodega" class="form-label needs-validation" >Fecha de Compra</label>
+                                <input type="date" class="form-control datos_bodega" id="dateFechaBodega" placeholder="Fecha de siembra"
+                                min="2000-01-01" max="2030-01-01">
+                                <div class="invalid-feedback">
+                                    Por favor, Seleccione una fecha.
+                                </div>
                             </div>
                             <div class="mb-1">
-                                <label for="fechaSiembra" class="form-label">Productor</label>
-                                <input type="text" class="form-control" id="fechaSiembra"
-                                    placeholder="Fecha de siembra">
+                                <label for="textNombreProductorBodega" class="form-label" autofocus>Productor</label>
+                                <input type="text" class="form-control datos_bodega" id="textNombreProductorBodega"
+                                placeholder="Nombre del Productor">
                             </div>
-                            <label for="fechaSiembra" class="form-label">Variedad</label>
-                            <select class="form-select form-select-sm mb-1" aria-label="Ejemplo de .form-select-sm">
+                            <label for="selectVariedadBodega" class="form-label">Variedad</label>
+                            <select class="form-select form-select-sm mb-1" id="selectVariedadBodega" aria-label="Ejemplo de .form-select-sm">
                                 <option selected disabled>Variedad</option>
                                 <option value="1">A</option>
                                 <option value="2">B</option>
                                 <option value="3">C</option>
                             </select>
                             <div class="mb-1">
-                                <label for="fechaSiembra" class="form-label">Altura</label>
-                                <input type="number" class="form-control" id="fechaSiembra"
-                                    placeholder="MSNM">
+                                <label for="numberAlturaBodega" class="form-label">Altura</label>
+                                <input type="number" class="form-control datos_bodega" id="numberAlturaBodega"
+                                placeholder="MSNM">
                             </div>
                             <div class="mb-1">
-                                <label for="fechaSiembra" class="form-label">Cantidad</label>
-                                <input type="number" class="form-control" id="fechaSiembra"
-                                    placeholder="Cantidad en KG">
+                                <label for="numberCantidadBodega" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control datos_bodega" id="numberCantidadBodega"
+                                placeholder="Cantidad en KG">
                             </div>
                             <div class="mb-1">
-                                <label for="fechaSiembra" class="form-label">Precio $</label>
-                                <input type="number" class="form-control" id="fechaSiembra"
-                                    placeholder="MSNM">
+                                <label for="numberPrecioBodega" class="form-label">Precio $</label>
+                                <input type="number" class="form-control datos_bodega" id="numberPrecioBodega"
+                                placeholder="MSNM">
                             </div>
                             
-
-
+                            
+                            
                         </form>
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary botones_cronometro"
-                            data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary botones_cronometro">Guardar Datos</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary" onclick="validarBodega(dateFechaBodega.value, textNombreProductorBodega.value, selectVariedadBodega.value, numberAlturaBodega.value, numberCantidadBodega.value, numberPrecioBodega.value)">Guardar Datos</button>
                     </div>
                 </div>
             </div>
@@ -123,6 +122,8 @@
     </div>
     <!-- Bootstrap JS -->
     <Script src="./js/bootstrap.min.js"></Script>
+    <!-- Validación JS-->
+    <Script src="./js/validacion.js"></Script>
 </body>
 
 </html>

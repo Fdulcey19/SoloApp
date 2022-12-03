@@ -50,7 +50,7 @@
             <div class="btn-rigth">
                 <button href="#" class="rounded-circle ms-3 border-0"><img src="./iconos/filtrar.png" alt=""></button>
                 <button href="#" class="rounded-circle ms-2 border-0" data-bs-toggle="modal"
-                data-bs-target="#form_lote_Modal"></a><img src="./iconos/boton-agregar.png" alt=""></button>
+                    data-bs-target="#form_lote_Modal"></a><img src="./iconos/boton-agregar.png" alt=""></button>
             </div>
         </div>
         <div class="row contenedor_historial">
@@ -70,8 +70,8 @@
                     </div>
                     <div class="modal-body py-0">
                         <figure class="text-center m-0">
-                            <img class="img-fluid pt-1" style="width:60px; height:60px;" src="./iconos/trilladora_amarilla.png"
-                                alt="">
+                            <img class="img-fluid pt-1" style="width:60px; height:60px;"
+                                src="./iconos/trilladora_amarilla.png" alt="">
                         </figure>
                         <!-- Formulario INPUTS -->
                         <form>
@@ -82,30 +82,31 @@
                                 <option value="3">C</option>
                             </select>
                             <div class="mb-1">
-                                <label for="fechaSiembra" class="form-label">Humedad</label>
+                                <label for="fechaSiembra" class="form-label needs-validation">Humedad</label>
                                 <input type="number" class="form-control" id="fechaSiembra" placeholder="Humeda">
                             </div>
                             <div class="mb-2">
                                 <label for="fechaSiembra" class="form-label">Peso Inicial</label>
-                                <input type="text" class="form-control" id="fechaSiembra"
-                                    placeholder="Peso Kg">
+                                <input type="text" class="form-control" id="fechaSiembra" placeholder="Peso Kg">
                             </div>
                             <div class="mb-2">
                                 <label for="fechaSiembra" class="form-label">Peso Final</label>
-                                <input type="text" class="form-control" id="fechaSiembra"
-                                    placeholder="Peso Kg">
+                                <input type="text" class="form-control" id="fechaSiembra" placeholder="Peso Kg">
                             </div>
                             <div class="peso_mayas" style="display: none;">
                                 <div class="mb-2">
                                     <label for="fechaSiembra" class="form-label">Peso Por Mallas</label>
-                                    <input type="number" name="" class="form-control" id="malla17" placeholder="Peso Malla 17" onkeyup="sumar()+function_calcular();">
+                                    <input type="number" name="" class="form-control" id="malla17"
+                                        placeholder="Peso Malla 17" onkeyup="sumar()+function_calcular();">
                                 </div>
                                 <div class="mb-2">
-                                    <input type="number" name="" class="form-control" id="malla15" placeholder="Peso Malla 15" onkeyup="sumar()+function_calcular();">
+                                    <input type="number" name="" class="form-control" id="malla15"
+                                        placeholder="Peso Malla 15" onkeyup="sumar()+function_calcular();">
                                 </div>
                                 <div class="mb-2">
-                                    <input type="number" name="" class="form-control" id="malla13" placeholder="Peso Malla 13" onkeyup="sumar()+function_calcular();">
-                                    
+                                    <input type="number" name="" class="form-control" id="malla13"
+                                        placeholder="Peso Malla 13" onkeyup="sumar()+function_calcular();">
+
                                 </div>
                             </div>
                             <h4 class="text-center">Factor De Rendimiento</h4>
@@ -123,3 +124,8 @@
     </div>
     <!-- Bootstrap JS -->
     <Script src="./js/bootstrap.min.js"></Script>
+    <!-- Validacion JS -->
+    <Script src="./js/validacion.js"></Script>
+</body>
+
+</html>
