@@ -6,7 +6,7 @@
 .inicio{
     background-image: url(../imagenes/fondo.jpg);
     background-size: cover;
-    min-height: 600px;
+    height: 100vh;
 }
 /* Login */
 .contenedor-login{
