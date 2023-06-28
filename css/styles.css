@@ -187,4 +187,7 @@
 
 }
 
-
+.contenedor_microlotes{
+    display: flex;
+    flex-direction: column;
+}
